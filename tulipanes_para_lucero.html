@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi Lucero 🌷💛</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:Georgia,"Times New Roman",serif}
+body{background:linear-gradient(#07111f 0%,#102b35 48%,#173d31 100%);color:#fff}
+#scene{position:fixed;inset:0;overflow:hidden}
+.stars,.petals{position:absolute;inset:0;pointer-events:none}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;opacity:.7;animation:twinkle 2.5s infinite ease-in-out}
+@keyframes twinkle{50%{opacity:.15;transform:scale(.5)}}
+.moon{position:absolute;right:10%;top:8%;width:80px;height:80px;border-radius:50%;background:#fff5c4;box-shadow:0 0 35px #fff0a0}
+.moon:after{content:"";position:absolute;background:#07111f;border-radius:50%;width:72px;height:72px;left:-14px;top:-5px}
+.hill{position:absolute;bottom:0;width:120%;height:32%;left:-10%;background:#0b251f;border-radius:50% 50% 0 0/25% 25% 0 0}
+.field{position:absolute;bottom:0;left:0;width:100%;height:48%;z-index:2}
+.tulip{position:absolute;bottom:10%;width:34px;height:115px;transform-origin:bottom center;animation:sway 4s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(2deg)}}
+.stem{position:absolute;width:5px;height:82px;background:#397443;left:15px;top:30px;border-radius:5px}
+.leaf{position:absolute;width:31px;height:13px;background:#4e914d;border-radius:100% 0 100% 0;top:68px;left:8px;transform:rotate(25deg)}
+.flower{position:absolute;top:0;left:2px;width:29px;height:34px;background:#ffd83d;border-radius:45% 45% 45% 45%;box-shadow:0 0 15px rgba(255,216,61,.45)}
+.flower:before,.flower:after{content:"";position:absolute;bottom:1px;width:15px;height:29px;background:#ffe45b;border-radius:70% 30% 55% 45%}
+.flower:before{left:0;transform:rotate(-13deg)}
+.flower:after{right:0;transform:rotate(13deg)}
+.tulip:nth-child(3n) .flower{background:#ffc928}
+.tulip:nth-child(3n) .flower:before,.tulip:nth-child(3n) .flower:after{background:#ffd83d}
+.content{position:absolute;z-index:5;inset:0;display:flex;align-items:center;justify-content:center;padding:22px;text-align:center}
+.card{width:min(92vw,650px);padding:30px 24px;border:1px solid rgba(255,231,122,.35);border-radius:28px;background:rgba(4,16,22,.48);backdrop-filter:blur(7px);box-shadow:0 15px 60px rgba(0,0,0,.35)}
+.kicker{font-size:14px;letter-spacing:4px;text-transform:uppercase;color:#ffe477;margin-bottom:14px}
+h1{font-size:clamp(36px,10vw,68px);margin:0 0 10px;color:#fff7c7;text-shadow:0 0 22px rgba(255,220,80,.35)}
+.subtitle{font-size:clamp(18px,4.5vw,26px);line-height:1.5;margin:0 auto 20px;max-width:540px}
+.message{font-size:clamp(16px,4vw,20px);line-height:1.75;color:#fff}
+button{border:0;border-radius:999px;padding:13px 22px;background:#ffd83d;color:#382b00;font-weight:bold;font-size:15px;cursor:pointer;box-shadow:0 7px 25px rgba(255,216,61,.25);margin-top:10px}
+#letter{display:none;max-height:48vh;overflow:auto;margin-top:15px;text-align:left;padding-right:5px}
+#letter p{line-height:1.75;margin:0 0 12px}
+.heart{position:absolute;z-index:4;pointer-events:none;font-size:22px;animation:rise 3s linear forwards}
+@keyframes rise{from{transform:translateY(0) scale(.8);opacity:0}15%{opacity:1}to{transform:translateY(-110vh) rotate(25deg) scale(1.4);opacity:0}}
+.hint{font-size:12px;opacity:.7;margin-top:13px}
+</style>
+</head>
+<body>
+<div id="scene">
+  <div class="stars" id="stars"></div>
+  <div class="moon"></div>
+  <div class="hill"></div>
+  <div class="field" id="field"></div>
+
+  <div class="content">
+    <div class="card">
+      <div class="kicker">21 de septiembre 🌷</div>
+      <h1>Para mi Lucero 💛</h1>
+      <p class="subtitle">Si pudiera regalarte un campo entero de flores, elegiría tulipanes amarillos… porque ninguno alcanzaría a decirte todo lo que siento por ti.</p>
+      <p class="message">Entre tantas flores, tantas personas y tantos caminos, mi corazón encontró su lugar contigo. 🌼</p>
+      <button id="open">Abrir mi carta 💌</button>
+      <div id="letter">
+        <p>Mi niña preciosa, hoy quiero regalarte algo más que flores. Quiero regalarte un pedacito de todo lo que siento cuando pienso en ti. 🌷💛</p>
+        <p>Los tulipanes amarillos hablan de alegría, cariño y luz, y cuando pienso en ti entiendo por qué una flor puede significar tanto. Llegaste a mi vida y, sin darte cuenta, hiciste que muchos de mis días tuvieran una razón más bonita para sonreír.</p>
+        <p>Lucero, quiero que cuando mires estas flores recuerdes que hay alguien que te mira con un amor sincero, que disfruta tus palabras, tus ocurrencias, tus momentos tiernos y hasta esos pequeños detalles que quizá tú ni siquiera notas. ❤️</p>
+        <p>No quiero prometerte un amor perfecto, porque somos humanos y tendremos días difíciles. Lo que sí quiero prometerte es que mi amor por ti será honesto, que voy a cuidar lo nuestro y que, mientras caminemos juntos, siempre tendrás en mí un lugar donde sentirte querida, escuchada y acompañada.</p>
+        <p>Si pudiera elegir una sola flor entre todas, elegiría un tulipán amarillo. Pero si pudiera elegir una sola persona entre todas, te elegiría a ti, Lucero. Una y otra vez. 🌷💛</p>
+        <p>Te amo, mi reina, mi niña preciosa, mi amor. Gracias por existir y por dejarme compartir contigo algo tan bonito. ✨</p>
+      </div>
+      <div class="hint">Toca la pantalla para llenar el cielo de corazones 💛</div>
+    </div>
+  </div>
+</div>
+<script>
+const stars=document.getElementById("stars");
+for(let i=0;i<95;i++){
+  const s=document.createElement("span"); s.className="star";
+  s.style.left=Math.random()*100+"%"; s.style.top=Math.random()*65+"%";
+  s.style.animationDelay=(Math.random()*3)+"s";
+  stars.appendChild(s);
+}
+const field=document.getElementById("field");
+for(let i=0;i<34;i++){
+  const t=document.createElement("div"); t.className="tulip";
+  t.style.left=(Math.random()*98)+"%";
+  t.style.bottom=(4+Math.random()*20)+"%";
+  t.style.transform=`scale(${.55+Math.random()*.7})`;
+  t.style.animationDelay=(Math.random()*4)+"s";
+  t.innerHTML='<div class="flower"></div><div class="stem"></div><div class="leaf"></div>';
+  field.appendChild(t);
+}
+document.getElementById("open").onclick=()=>{
+  const l=document.getElementById("letter"), b=document.getElementById("open");
+  l.style.display="block"; b.style.display="none";
+  for(let i=0;i<18;i++) setTimeout(makeHeart,i*90);
+};
+function makeHeart(){
+  const h=document.createElement("div"); h.className="heart"; h.textContent=Math.random()>.25?"💛":"🌷";
+  h.style.left=Math.random()*100+"vw"; h.style.bottom="-30px";
+  h.style.animationDuration=(2.5+Math.random()*2)+"s";
+  document.body.appendChild(h); setTimeout(()=>h.remove(),5000);
+}
+document.addEventListener("click",(e)=>{
+  if(e.target.tagName==="BUTTON") return;
+  for(let i=0;i<4;i++) setTimeout(makeHeart,i*100);
+});
+</script>
+</body>
+</html>
